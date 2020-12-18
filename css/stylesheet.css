@@ -1,0 +1,206 @@
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:IRANSans;
+    background-color:#e7e7ef;
+    color:#777;
+    font-size:1rem;
+    line-height: 2;
+    direction:rtl;
+    padding-top:90px;
+}
+
+@font-face {
+    font-family: IRANSans;
+    src: url(../fonts/IransansFont/IRANSansWeb.woff) format('woff'),
+    url(../fonts/IransansFont/IRANSansWeb.ttf) format('truetype'),
+    url(../fonts/IransansFont/IRANSansWeb.eot) format('embedded-opentype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    src: url(../fonts/IransansFont/number/IRANSansWeb.woff ) format('woff'),
+    url(../fonts/IransansFont/number/IRANSansWeb.ttf) format('truetype'),
+    url(../fonts/IransansFont/number/IRANSansWeb.eot) format('embedded-opentype');
+}
+
+.btn-primary{
+         border-radius: 10px !important;
+         box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.16), -2px -4px 12px 1px #ffffffa1;
+         border-color:transparent;
+         background-color: transparent;
+         color:#777;
+}
+
+.btn-primary:hover{
+color:#9bcc40;
+border-color: transparent;
+background-color: transparent;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+    color:#9bcc40;
+    background-color: transparent;
+    border:none;
+}
+
+.btn-primary:focus{
+    background-color: transparent;
+    box-shadow: 1px 1px 2px #fff, inset 0 0 10px -5px #888;
+    background-color: #e7e7ef;
+    color:#9bcc40;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+    color:#9bcc40;
+}
+
+.card-style {
+    padding: 20px;
+    border-radius: 10px!important;
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.16), -2px -4px 12px 1px #ffffffa1;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transition: .15s ease-in-out;
+}
+
+.header{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    width:100%;
+    padding:15px 0;
+    background-color: #e7e7ef;
+    z-index: 100;
+    box-shadow: 0px 3px 3px 0px #ccc;
+}
+
+.header .logo-wrapper img{
+    height: 45px;
+}
+
+.employee-item{
+    height: 65px;
+}
+
+.employee-item .nav-link{
+    padding: 10px;
+    border-radius: 10px!important;
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.16), -2px -4px 12px 1px #ffffffa1;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transition: .15s ease-in-out;
+ 
+}
+
+.employee-item:hover .nav-link{
+    transform: translateX(-3px);
+    transform-origin: right;
+    box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.16), -2px -4px 12px 1px #ffffffa1;
+}
+
+.side-menu{
+
+    position: sticky;
+    top: 106px;
+}
+
+.side-menu .nav{
+    padding: 0;
+} 
+
+.side-menu .nav-item .nav-link .bullet{
+    transition: .15s ease-in-out;
+}
+
+.side-menu .nav-item:hover .nav-link .bullet{
+    color:#9bcc40;
+}
+
+.bullet{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 2.1;
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.16), -2px -4px 12px 1px #ffffffa1;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    margin-left: 5px;
+}
+
+.nav-item .nav-link{
+    color:#666;
+}
+
+.header-title {
+    display: flex;
+    font-size: medium;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.header-title .title-wrapper {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
+    .header-title .title-styler {
+        display: inline-block;
+        height: 7px;
+        width: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(#CCC, #fff);
+        margin-top: 5px;
+    }
+
+  .search-wrapper input{
+      background-color: transparent;
+      border-radius: 8px;
+      box-shadow: 1px 1px 2px #fff, inset 0 0 10px -6px #888;
+      border-color: #ccc;
+      color:#666 !important;
+  }
+
+  .search-wrapper input:focus{
+      background-color: transparent;
+      box-shadow: 1px 1px 2px #fff, inset 0 0 10px -4px #888;
+      background-color: #e7e7ef;
+  }
+
+  /* profile */
+
+  .profile-wrapper{
+      height: 100%;
+  }
+
+  .profile-picture{
+      border-radius: 200px;
+      box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.16), -2px -4px 12px 1px #ffffffa1;
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+      transition: .15s ease-in-out;
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+  }
+
+  .contact{
+    color:#777;
+  }
+
+  .contact:hover{
+    text-decoration: none;
+    color:#9bcc40;
+  }
+
+  .employee-info .nav-item{
+    margin-bottom: 10px;
+  }
